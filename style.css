@@ -1,0 +1,31 @@
+body {
+    background-color:rgb(215, 219, 226);
+    height: 1500px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.box-1 {
+
+    width: 610px;
+    height: 300px;
+    border: rgba(185, 153, 176, 0.479) solid ;
+    position: relative ;left: 640px;
+    border-radius: 10px;
+    color: rgb(25, 11, 39);
+    font-size: 150%;
+    
+}
+
+
+h1 {
+    text-align: center;
+}
+
+a{
+    position: relative; left: 831px;top: 20px;
+    font-size: 150%;
+}
+
+a:hover{
+    color: rgb(62, 74, 112);
+}
