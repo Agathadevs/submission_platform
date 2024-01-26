@@ -4,10 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="{{ url_for('static', filename='css/login_.css') }}" rel="stylesheet" />
 </head>
 <body>
-    <h1>
-        Login
-    </h1>
+    <div class="wrap">
+        <div class="wrapper">
+            
+            <form  method="post" action={{ url_for('login_') }}> 
+                <h1>Login</h1>
+                <label for="email">帳號:</label>
+                <input type="text" name="email" placeholder="請輸入帳號">
+            
+                <br>
+            
+                <label for="password">密碼:</label>
+                <input type="text" name="password" placeholder="請輸入密碼">
+            
+                <br>
+            
+                <button type="submit">登入</button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

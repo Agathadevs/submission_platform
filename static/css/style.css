@@ -28,8 +28,9 @@ a:hover{
 }
 
 .Register{
-    position: relative;right: 0px;left: 1800px;top: -410px;
-    font-size: 130%;
+    position: relative;right: 0px;left: 950px;top: -420px;
+    font-size: 120%;
+    color: rgb(129, 138, 161);
 } 
 
 .Register:hover{
@@ -37,8 +38,9 @@ a:hover{
 }
 
 .Login{
-    position: relative;right: 0px;left: 1800px;top: -410px;
-    font-size: 130%;
+    position: relative;right: 0px;left: 950px;top: -420px;
+    font-size: 120%;
+    color: rgb(129, 138, 161);
 } 
 
 .Login:hover{
