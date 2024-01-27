@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>投稿</title>
+    <link href={{ url_for("static",filename='css/register_.css')}} rel="stylesheet" />
 </head>
 <body>
-    <form>
-        <input type="text">
-        <input type="button" value="投稿">
+    <form action={{ url_for('contribute_')}} method="post">
+        <textarea>
+            hello world >
+        </textarea>
+        <br>
+        <button type="submit">投稿</button>
     </form>
 </body>
 </html>

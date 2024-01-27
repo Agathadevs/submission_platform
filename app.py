@@ -5,6 +5,15 @@ from flask import (
     request
 )
 
+import sqlite3
+
+try:
+    db = sqlite3.connect('customers.db')
+    cursor = db.cursor()
+
+except Exception as e:
+    print(e)
+
 app=flask.Flask(__name__)
 
 @app.route("/")
@@ -27,7 +36,7 @@ def login_():
     
     return render_template("login.html")
 
-@app.route("/contribute.html")
+@app.route("/Contribute.html",methods=['GET', 'POST'])
 def contribute_():
     return render_template("Contribute.html")
 

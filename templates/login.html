@@ -7,24 +7,24 @@
     <link href="{{ url_for('static', filename='css/login_.css') }}" rel="stylesheet" />
 </head>
 <body>
-    <div class="wrap">
-        <div class="wrapper">
+    <div class="wrapper">
+        <form  method="post" action={{ url_for('login_') }}> 
+            <h1>
+                Login
+            </h1>
+            <label for="email">帳號:</label>
+            <input type="text" name="email" placeholder="請輸入帳號">
             
-            <form  method="post" action={{ url_for('login_') }}> 
-                <h1>Login</h1>
-                <label for="email">帳號:</label>
-                <input type="text" name="email" placeholder="請輸入帳號">
+            <br>
             
-                <br>
+            <label for="password">密碼:</label>
+            <input type="text" name="password" placeholder="請輸入密碼">
             
-                <label for="password">密碼:</label>
-                <input type="text" name="password" placeholder="請輸入密碼">
+            <br>
             
-                <br>
-            
-                <button type="submit">登入</button>
-            </form>
-        </div>
+            <button type="submit">登入</button>
+        </form>
     </div>
+</div>
 </body>
 </html>
